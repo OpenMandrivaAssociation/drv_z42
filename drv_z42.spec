@@ -1,9 +1,9 @@
 Summary:	Printer driver for the Lexmark Z42, Z43 and Z52 printer
 Name: 		drv_z42
 Version:	0.4.3
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPL
-Group:		System/Kernel and hardware
+Group:		System/Printing
 URL:		http://www.xs4all.nl/~pastolk/
 Source:		http://www.xs4all.nl/~pastolk/drv_z42-%{version}.tar.gz
 BuildRequires:	XFree86-devel
@@ -25,7 +25,7 @@ Driver for the Lexmark printers Z42, Z43, Z52, X73 and the Compaq IJ1200.
 
 %package -n	z42tool
 Summary:	GUI for Lexmark printer maintence
-Group:		System/Configuration/Printing
+Group:		System/Printing
 Requires:	%{name} = %{version}
 
 %description -n	z42tool
