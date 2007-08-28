@@ -72,7 +72,6 @@ convert z42tool/pixmaps/logo2.png -resize 48x48  %{buildroot}%{_liconsdir}/z42to
 install -d %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-z42tool.desktop << EOF
 [Desktop Entry]
-Encoding=UTF-8
 Name=z42tool - GUI for Lexmark printer maintence
 Comment=GUI for Lexmark printer maintence
 Exec=%{_bindir}/z42tool
