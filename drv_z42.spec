@@ -6,7 +6,7 @@ License:	GPL
 Group:		System/Printing
 URL:		http://www.xs4all.nl/~pastolk/
 Source:		http://www.xs4all.nl/~pastolk/drv_z42-%{version}.tar.gz
-BuildRequires:	XFree86-devel
+BuildRequires:	X11-devel
 BuildRequires:	xpm-devel
 BuildRequires:	atk-devel
 BuildRequires:	freetype2-devel
