@@ -81,11 +81,15 @@ Type=Application
 Categories=System;Monitor;
 EOF
 
+%if %mdkversion < 200900
 %post -n z42tool
 %update_menus
+%endif
 
+%if %mdkversion < 200900
 %postun -n z42tool
 %clean_menus
+%endif
 
 %clean
 rm -rf %{buildroot}
