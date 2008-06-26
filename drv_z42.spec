@@ -1,7 +1,7 @@
 Summary:	Printer driver for the Lexmark Z42, Z43 and Z52 printer
 Name: 		drv_z42
 Version:	0.4.3
-Release:	%mkrel 5
+Release:	%mkrel 6
 License:	GPL
 Group:		System/Printing
 URL:		http://www.xs4all.nl/~pastolk/
@@ -73,8 +73,8 @@ convert %SOURCE1 -resize 48x48  %{buildroot}%{_liconsdir}/z42tool.png
 install -d %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-z42tool.desktop << EOF
 [Desktop Entry]
-Name=z42tool - GUI for Lexmark printer maintence
-Comment=GUI for Lexmark printer maintence
+Name=Lexmark printer manager
+Comment=Status, alignment, cartridge maintenance
 Exec=%{_bindir}/z42tool
 Icon=z42tool
 Terminal=false
