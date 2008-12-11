@@ -16,7 +16,7 @@ BuildRequires:	gtk+2-devel
 BuildRequires:	libfontconfig-devel
 BuildRequires:	libz-devel
 BuildRequires:	pango-devel
-BuildRequires:	ImageMagick
+BuildRequires:	imagemagick
 Conflicts:	printer-utils = 2007
 Conflicts:	printer-filters = 2007
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
