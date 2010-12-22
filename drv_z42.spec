@@ -7,15 +7,7 @@ Group:		System/Printing
 URL:		http://www.xs4all.nl/~pastolk/
 Source:		http://www.xs4all.nl/~pastolk/drv_z42-%{version}.tar.gz
 Source1:	z42-2.png
-BuildRequires:	X11-devel
-BuildRequires:	xpm-devel
-BuildRequires:	atk-devel
-BuildRequires:	freetype2-devel
-BuildRequires:	glib2-devel
 BuildRequires:	gtk+2-devel
-BuildRequires:	libfontconfig-devel
-BuildRequires:	libz-devel
-BuildRequires:	pango-devel
 BuildRequires:	imagemagick
 Conflicts:	printer-utils = 2007
 Conflicts:	printer-filters = 2007
@@ -43,7 +35,7 @@ pushd src
 popd
 
 pushd z42tool
-%configure
+%configure2_5x
 %make
 popd
 
@@ -57,7 +49,7 @@ pushd src
 popd
 
 pushd z42tool
-    %makeinstall
+    %makeinstall_std
 popd
 
 # icon
