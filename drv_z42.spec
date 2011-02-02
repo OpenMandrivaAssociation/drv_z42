@@ -1,7 +1,7 @@
 Summary:	Printer driver for the Lexmark Z42, Z43 and Z52 printer
 Name: 		drv_z42
 Version:	0.4.3
-Release:	%mkrel 10
+Release:	%mkrel 11
 License:	GPL
 Group:		System/Printing
 URL:		http://www.xs4all.nl/~pastolk/
