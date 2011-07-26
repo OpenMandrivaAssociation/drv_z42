@@ -1,12 +1,13 @@
 Summary:	Printer driver for the Lexmark Z42, Z43 and Z52 printer
 Name: 		drv_z42
 Version:	0.4.3
-Release:	%mkrel 12
+Release:	%mkrel 13
 License:	GPL
 Group:		System/Printing
 URL:		http://www.xs4all.nl/~pastolk/
 Source:		http://www.xs4all.nl/~pastolk/drv_z42-%{version}.tar.gz
 Source1:	z42-2.png
+Source2:        lexmark.png
 BuildRequires:	gtk+2-devel
 BuildRequires:	imagemagick
 Conflicts:	printer-utils = 2007
@@ -57,9 +58,9 @@ install -d %{buildroot}%{_miconsdir}
 install -d %{buildroot}%{_iconsdir}
 install -d %{buildroot}%{_liconsdir}
 
-convert %SOURCE1 -resize 16x16  %{buildroot}%{_miconsdir}/z42tool.png
-convert %SOURCE1 -resize 32x32  %{buildroot}%{_iconsdir}/z42tool.png
-convert %SOURCE1 -resize 48x48  %{buildroot}%{_liconsdir}/z42tool.png
+convert %SOURCE2 -resize 16x16  %{buildroot}%{_miconsdir}/z42tool.png
+convert %SOURCE2 -resize 32x32  %{buildroot}%{_iconsdir}/z42tool.png
+convert %SOURCE2 -resize 48x48  %{buildroot}%{_liconsdir}/z42tool.png
 
 # XDG menu
 install -d %{buildroot}%{_datadir}/applications
