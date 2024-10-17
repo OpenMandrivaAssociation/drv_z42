@@ -4,7 +4,7 @@ Version:	0.4.3
 Release:	28
 License:	GPLv2
 Group:		System/Printing
-Url:		http://www.xs4all.nl/~pastolk/
+Url:		https://www.xs4all.nl/~pastolk/
 Source:		http://www.xs4all.nl/~pastolk/%{name}-%{version}.tar.gz
 Source1:	z42-2.png
 Source2:	lexmark.png
